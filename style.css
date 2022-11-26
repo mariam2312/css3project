@@ -1,0 +1,30 @@
+body{
+    perspective: 600px;
+}
+.parent{
+    width: 200px;
+    height: 400px;
+    position: relative;
+    transition: all 1s;
+    -webkit-transform-style: preserve-3d;
+}
+.parent:hover {
+    -webkit-transform: rotateY(180deg);
+}
+.ch1 , .ch2{
+    width: 100%;
+    height: 100%;
+    font-size: x-large;
+    margin-left: 400px;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+}
+.ch1{
+    background-color: aqua;
+    z-index: 2;
+}
+.ch2{
+    background-color: blueviolet;
+    -webkit-transform: rotateY(180deg);
+    z-index: 1;
+}
